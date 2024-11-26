@@ -96,7 +96,7 @@ void loop() {
           drive_forward();
         } 
         // Drifitng away from the wall
-        else if(valR > 10) { //20, 5, 6, 10 Ten worked for angled and curved wall, but NOT straight 90
+        else if(valR > 15) { //20, 5, 6, 10 Ten worked for angled and curved wall, but NOT straight 90
           Serial.println("Action: Realign to wall - Right too far");
           turn_right();
         }
